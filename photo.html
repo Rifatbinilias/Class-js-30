@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Website</title>
+    <style>
+        #posts {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 30px;
+
+        }
+
+        /* এই নিচের post টি js এর মধ্যে ধরা রয়েছে */
+        .post {
+            border: 2px solid saddlebrown;
+            padding: 0 0 0 20px;
+            border-radius: 10px;
+
+        }
+
+        @media screen and (max-width: 667px) {
+            #posts {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <section>
+        <h1>Show on your photo</h1>
+        <div id="posts">
+
+
+        </div>
+    </section>
+
+    <script src="photos.js"></script>
+</body>
+
+</html>
